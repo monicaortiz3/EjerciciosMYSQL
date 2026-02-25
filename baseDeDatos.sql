@@ -120,3 +120,25 @@ select * from Alumno
 select * from Alumno
 	where month(fecha_registro) = month(curdate())
 	and year(fecha_registro) = year(curdate());
+
+
+
+-- Mostrar todos los alumnos ordenados por nombre.
+
+-- Listar los alumnos ordenados por apellido paterno de forma ascendente.
+
+-- Mostrar los alumnos ordenados por apellido materno de forma descendente.
+
+-- Consultar los alumnos ordenados por fecha de registro, del más reciente al más antiguo.
+
+Listar los alumnos ordenados por promedio de mayor a menor.
+
+-- Mostrar el nombre, apellido paterno y promedio de los alumnos ordenados por promedio de menor a mayor.
+
+-- Consultar los alumnos ordenados primero por carrera y luego por semestre.
+
+-- Mostrar los alumnos ordenados por fecha de nacimiento del más antiguo al más reciente.
+
+-- Listar el nombre, matrícula y fecha de registro ordenados por fecha de registro.
+
+-- Mostrar los alumnos ordenados por género y después por apellido paterno.
