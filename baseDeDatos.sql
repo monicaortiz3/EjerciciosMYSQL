@@ -74,7 +74,7 @@ select * from Alumno
 
 -- Mostrar los alumnos que vivan en una dirección que contenga la palabra Centro.
 select * from Alumno
-	where direccion = "Centro";
+	where direccion like "%Centro%";
 
 -- Consultar los alumnos cuya matrícula sea mayor a 5000.
 select * from Alumno
