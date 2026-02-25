@@ -40,3 +40,46 @@ value("Damaris", "Ortiz","Munguia",'2023-03-18', 2370410,'2005-06-17', 9.6, "Cal
 ('Camila', 'Ramos', 'Vega', '2026-02-20 12:50:00', 20260020, '2003-06-29', 9.35, 'Av. Texcoco 999, Nezahualcoyotl', 'Femenino', 'Ingenieria en Sistemas', 5);
 
 SELECT * FROM Alumno;
+
+
+
+
+-- Seleccionar todos los alumnos que pertenezcan a la carrera de Ingeniería en Sistemas.
+
+-- Mostrar los alumnos cuyo promedio sea mayor a 8.5.
+
+-- Consultar los alumnos que estén en el semestre 1.
+
+-- Listar los alumnos de género Femenino.
+
+-- Obtener los alumnos registrados después del año 2023.
+
+-- Mostrar los alumnos cuyo apellido paterno sea García.
+
+-- Consultar los alumnos con promedio menor a 7.0.
+
+-- Seleccionar los alumnos que nacieron antes del año 2000.
+
+-- Mostrar los alumnos que vivan en una dirección que contenga la palabra Centro.
+
+-- Consultar los alumnos cuya matrícula sea mayor a 5000.
+
+-- Obtener los alumnos que estén entre el semestre 3 y 6.
+
+-- Mostrar los alumnos registrados en una fecha específica.
+
+-- Consultar los alumnos con promedio entre 8.0 y 9.5.
+
+-- Seleccionar los alumnos que no pertenezcan a la carrera de Derecho.
+
+-- Mostrar los alumnos cuyo nombre comience con la letra A.
+
+-- Consultar los alumnos cuyo apellido materno sea NULL.
+
+-- Obtener los alumnos que tengan exactamente 20 años (usando la fecha de nacimiento).
+
+-- Mostrar los alumnos ordenados por promedio de forma descendente.
+
+-- Consultar los alumnos que estén en el último semestre.
+
+-- Seleccionar los alumnos registrados en el mismo mes actual.
