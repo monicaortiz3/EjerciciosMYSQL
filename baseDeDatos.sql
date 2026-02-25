@@ -40,46 +40,83 @@ value("Damaris", "Ortiz","Munguia",'2023-03-18', 2370410,'2005-06-17', 9.6, "Cal
 ('Camila', 'Ramos', 'Vega', '2026-02-20 12:50:00', 20260020, '2003-06-29', 9.35, 'Av. Texcoco 999, Nezahualcoyotl', 'Femenino', 'Ingenieria en Sistemas', 5);
 
 SELECT * FROM Alumno;
-
-
-
-
 -- Seleccionar todos los alumnos que pertenezcan a la carrera de Ingeniería en Sistemas.
+select * from Alumno
+	where carrera = "Ingenieria en sistemas";
 
 -- Mostrar los alumnos cuyo promedio sea mayor a 8.5.
+select * from Alumno
+	where promedio > 8.5;
 
 -- Consultar los alumnos que estén en el semestre 1.
+select * from Alumno
+	where semestre = 1;
 
 -- Listar los alumnos de género Femenino.
+select * from Alumno
+	where genero = "Femenino";
 
 -- Obtener los alumnos registrados después del año 2023.
+select * from Alumno
+	where fecha_registro > 2023;
 
 -- Mostrar los alumnos cuyo apellido paterno sea García.
+select * from Alumno
+	where apellido_paterno = "Garcia";
 
 -- Consultar los alumnos con promedio menor a 7.0.
+select * from Alumno
+	where promedio < 7.0;
 
 -- Seleccionar los alumnos que nacieron antes del año 2000.
+select * from Alumno
+	where fecha_nacimiento < 2000;
 
 -- Mostrar los alumnos que vivan en una dirección que contenga la palabra Centro.
+select * from Alumno
+	where direccion = "Centro";
 
 -- Consultar los alumnos cuya matrícula sea mayor a 5000.
+select * from Alumno
+	where matricula > 5000;
 
 -- Obtener los alumnos que estén entre el semestre 3 y 6.
+select * from Alumno
+	where semestre between 3 and 4;
 
 -- Mostrar los alumnos registrados en una fecha específica.
+select * from Alumno
+	where fecha_registro = '2026-02-20';
 
 -- Consultar los alumnos con promedio entre 8.0 y 9.5.
+select * from Alumno
+	where promedio between 8.0 and 9.5;
 
 -- Seleccionar los alumnos que no pertenezcan a la carrera de Derecho.
+select * from Alumno
+	where carrera = "Derecho";
 
 -- Mostrar los alumnos cuyo nombre comience con la letra A.
+select * from Alumno
+	where nombre like 'A%';
 
 -- Consultar los alumnos cuyo apellido materno sea NULL.
+select * from Alumno
+	where apellido_materno = null;
 
 -- Obtener los alumnos que tengan exactamente 20 años (usando la fecha de nacimiento).
+select * from Alumno
+	where timestampdiff(year, fecha_nacimiento, CURDATE()) = 20; 
 
 -- Mostrar los alumnos ordenados por promedio de forma descendente.
+select * from Alumno
+	order by promedio desc;
 
 -- Consultar los alumnos que estén en el último semestre.
+select * from Alumno
+	where semestre = 9;
 
 -- Seleccionar los alumnos registrados en el mismo mes actual.
+select * from Alumno
+	where month(fecha_registro) = month(curdate())
+	and year(fecha_registro) = year(curdate());
